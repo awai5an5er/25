@@ -10,7 +10,7 @@ export default function App() {
     <div className="bg-light px-6 md:px-12 py-12 flex flex-col md:flex-row items-center w-full h-screen overflow-hidden relative">
       {/* Text Section */}
       <h1
-        className="text-dark text-center md:text-left font-extrabold text-transparent bg-clip-text select-none
+        className="text-dark text-center md:text-left font-extrabold py-8 justify-center text-transparent bg-clip-text select-none
                    bg-cover bg-center leading-tight 
                    text-[2.5rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem]"
         style={{

@@ -7,7 +7,7 @@ import Arrow from "../assets/bottom-arrow.svg";
 
 export default function App() {
   return (
-    <div className="bg-light px-6 md:px-12 py-12 flex flex-col md:flex-row items-center w-full h-screen overflow-hidden relative">
+    <div className="bg-light px-6 md:px-12 py-12 flex flex-col md:flex-row items-center w-full h-full overflow-hidden  gap-10">
       {/* Text Section */}
       <h1
         className="text-dark text-center md:text-left font-extrabold py-8 justify-center text-transparent bg-clip-text select-none
@@ -22,7 +22,7 @@ export default function App() {
       </h1>
 
       {/* Swiper Section */}
-      <div className="absolute bottom-10 md:hidden right-1/2  translate-x-1/2  w-16 ">
+      <div className="  md:hidden justify-center items-center   w-16 ">
         <Swiper
           slidesPerView={4}
           spaceBetween={5}

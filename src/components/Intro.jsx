@@ -7,13 +7,20 @@ import Arrow from "../assets/bottom-arrow.svg";
 
 export default function App() {
   return (
-    <div className="bg-light px-6 md:px-12 py-12 flex flex-col md:flex-row items-center w-full h-full overflow-hidden  gap-10">
+    <div
+      className="bg-light px-6 md:px-12 py-12 flex flex-col md:flex-row items-center w-full h-full overflow-hidden gap-10 "
+      style={{
+        backgroundImage: "url('/building.png')",
+        backgroundPosition: "0% 10%",
+      }}
+    >
+      {/* <div className="absolute inset-0 bg-black/40"></div> */}
       <h1
-        className="text-dark text-center md:text-left font-extrabold py-8 justify-center text-transparent bg-clip-text select-none
+        className="z-30 text-light text-center md:text-left font-extrabold py-8 justify-center md:text-transparent md:bg-clip-text md:select-none
                    bg-cover bg-center leading-tight 
-                   text-[2.5rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem]"
+                   text-[2.5rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] md:opacity-0 hover:opacity-100 transition-all duration-400"
         style={{
-          backgroundImage: "url('/bg-pic5.png')",
+          backgroundImage: "url('/bg-bg.png')",
           WebkitBackgroundClip: "text",
         }}
       >
@@ -38,7 +45,7 @@ export default function App() {
             <SwiperSlide key={i}>
               <div className="flex justify-center">
                 <img
-                  className="text-dark w-8 h-8 md:w-12 md:h-12"
+                  className=" w-8 h-8 md:w-12 md:h-12"
                   src={Arrow}
                   alt="arrow"
                 />

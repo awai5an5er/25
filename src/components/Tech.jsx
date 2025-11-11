@@ -22,7 +22,7 @@ export default function App() {
     <div
       className="flex flex-col gap-15 items-center justify-center bg-dark py-20"
       style={{
-        backgroundImage: "url('/bg-pic5.png')", // replace with your image
+        backgroundImage: "url('/bg-pic5.png')"
       }}
     >
       <div className="px-10 text-light text-2xl  justify-center items-center">

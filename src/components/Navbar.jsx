@@ -26,8 +26,6 @@ export default function App() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
-
-  // Nav items with section IDs
   const navItems = [
     { name: "HOME", href: "/" },
     { name: "PLANS", href: "#1" },
@@ -49,14 +47,11 @@ export default function App() {
         }`}
       >
         <div className="flex justify-between items-center px-6 md:px-16 py-4">
-          {/* Logo */}
           <img
             className="w-14 h-14 bg-light rounded-full"
             src={Logo}
             alt="Logo"
           />
-
-          {/* Desktop Nav Links */}
           <ul className="hidden md:flex items-center gap-12">
             {navItems.map((item, index) => (
               <li
@@ -72,8 +67,6 @@ export default function App() {
               </li>
             ))}
           </ul>
-
-          {/* Mobile Menu Button */}
           <button
             className="text-light md:hidden p-2"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -81,8 +74,6 @@ export default function App() {
             {menuOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
         </div>
-
-        {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden bg-dark border-t border-light/20">
             <ul className="flex flex-col items-center gap-6 py-6">
@@ -99,8 +90,6 @@ export default function App() {
           </div>
         )}
       </nav>
-
-      {/* Add smooth scrolling */}
       <style>{`
         html {
           scroll-behavior: smooth;

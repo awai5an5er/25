@@ -29,7 +29,6 @@ export default function App() {
 
   return (
     <div id="1" className="bg-light py-10 px-5 md:px-10 z-50 relative">
-      {/* Section Headings */}
       <div className="text-center space-y-2">
         <h2 className="text-lg sm:text-xl md:text-[20px] font-medium text-dark">
           Our Plans
@@ -41,8 +40,6 @@ export default function App() {
           Development and guidance
         </span>
       </div>
-
-      {/* Cards Container */}
       <div className="flex flex-col md:flex-row gap-8 py-12 justify-center items-center md:items-stretch">
         {plans.map((plan, index) => (
           <div
@@ -50,14 +47,11 @@ export default function App() {
             className="px-6 py-6 flex flex-col bg-dark text-light w-full sm:w-[80%] md:w-[30%] rounded-2xl shadow-lg 
                        transition-transform duration-300 hover:-translate-y-3 hover:shadow-2xl"
           >
-            {/* Title */}
             <div className="flex justify-center md:justify-start px-2">
               <p className="text-2xl sm:text-[26px] md:text-[28px] font-bold">
                 {plan.name}
               </p>
             </div>
-
-            {/* Image */}
             <div className="flex justify-center py-6">
               <img
                 className="h-48 sm:h-56 md:h-60 w-full object-cover rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105"
@@ -67,8 +61,6 @@ export default function App() {
             </div>
 
             <hr className="border-light/40 mb-4" />
-
-            {/* Features */}
             <div className="py-4 px-2 font-medium">
               {features.map((feature, i) => (
                 <p
@@ -79,8 +71,6 @@ export default function App() {
                 </p>
               ))}
             </div>
-
-            {/* Button */}
             <button
               className="w-full border-2 border-light bg-light text-dark px-6 py-3 mt-4 font-semibold text-lg 
                          transition-all duration-300 rounded-xl hover:bg-dark hover:text-light"

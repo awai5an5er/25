@@ -27,12 +27,9 @@ export default function BackgroundVideo() {
       className="relative bg-cover bg-center bg-no-repeat min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 py-10"
       style={{ backgroundImage: "url('/bg-pic5.png')" }}
     >
-      {/* Title */}
       <h1 className="text-light text-4xl sm:text-5xl md:text-6xl font-bold mb-12 text-center drop-shadow-lg">
         Our Team
       </h1>
-
-      {/* Swiper Carousel */}
       <div className="w-full max-w-[900px]">
         <Swiper
           slidesPerView={1}
@@ -45,14 +42,11 @@ export default function BackgroundVideo() {
           {team.map((member, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col sm:flex-row items-center justify-center bg-light text-dark rounded-3xl shadow-xl overflow-hidden mx-auto w-[90%] sm:w-[80%] md:w-[70%]">
-                {/* Image */}
                 <img
                   className="w-full sm:w-1/2 h-64 sm:h-auto object-cover rounded-t-3xl sm:rounded-tr-none sm:rounded-bl-3xl"
                   src={member.img}
                   alt={member.name.join(" ")}
                 />
-
-                {/* Details */}
                 <div className="flex flex-col gap-5 py-8 sm:py-12 px-5 sm:px-8 text-center sm:text-left">
                   <div className="text-2xl sm:text-3xl font-bold leading-tight">
                     <span className="block">{member.name[0]}</span>

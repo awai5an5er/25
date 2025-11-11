@@ -52,7 +52,6 @@ export default function CounterSection() {
       ref={sectionRef}
       className="bg-light text-center py-10 sm:py-16 px-4 sm:px-6 lg:px-10"
     >
-      {/* Image Section */}
       <div className="flex justify-center items-center py-5">
         <img
           src={Tech}
@@ -60,8 +59,6 @@ export default function CounterSection() {
           className="w-full max-w-[500px] sm:max-w-[700px] h-auto object-contain rounded-xl"
         />
       </div>
-
-      {/* Counter Section */}
       <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-10 mt-8 sm:mt-12">
         {counters.map((item, index) => (
           <div

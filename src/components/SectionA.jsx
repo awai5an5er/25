@@ -20,7 +20,6 @@ export default function App() {
             key={index}
             className="py-10 w-full sm:w-[80%] md:w-[45%] lg:w-[30%]  overflow-hidden flex flex-col items-start"
           >
-            {/* Image + Hover Menu */}
             <div
               onMouseEnter={() => setHover(index)}
               onMouseLeave={() => setHover(null)}
@@ -53,8 +52,6 @@ export default function App() {
                 </ul>
               </div>
             </div>
-
-            {/* Text Content */}
             <h2 className="py-3 text-3xl sm:text-4xl md:text-5xl font-bold text-dark">
               Project Management
             </h2>

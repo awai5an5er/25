@@ -18,20 +18,15 @@ export default function App() {
       className="hidden md:block relative w-full h-screen bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/bg-pic5.png')" }}
     >
-      {/* Hand Image */}
       <img
         className="absolute -bottom-30 left-25 w-full h-auto md:h-[1000px] px-5"
         src={Hand}
         alt="Hand"
       />
-
-      {/* Content */}
       <div className="relative z-10 flex flex-col gap-24 justify-around  px-5">
         <h1 className="text-light font-bold text-7xl flex justify-end pr-10 drop-shadow-lg">
           Check us out!
         </h1>
-
-        {/* Social Icons Slider */}
         <div className="flex justify-end px-10">
           <Swiper
             modules={[Navigation, Autoplay]}

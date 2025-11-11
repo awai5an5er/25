@@ -1,7 +1,7 @@
 import Img from "../assets/img1.avif";
-import P1 from "../assets/P1.jpg";
-import P2 from "../assets/P2.jpg";
-import P3 from "../assets/P3.jpg";
+import P1 from "../assets/p1.jpg";
+import P2 from "../assets/p2.jpg";
+import P3 from "../assets/p3.jpg";
 
 export default function App() {
   return (

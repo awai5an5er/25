@@ -43,7 +43,7 @@ export default function App() {
           </p>
           <p className="flex items-center gap-2">
             <Mail className="w-5 h-5" /> Email:{" "}
-            <span className="font-bold">abcd@sobtech.com</span>
+            <span className="font-bold">abcd@25.com</span>
           </p>
         </div>
         <div className="flex flex-col items-center md:items-start gap-8 md:w-1/4">

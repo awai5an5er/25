@@ -1,0 +1,7 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Play">
+  <!-- Rounded red rounded rectangle (transparent canvas behind it) -->
+  <rect x="36" y="96" width="440" height="320" rx="80" ry="80" fill="#FF0000"></rect>
+  <!-- White play triangle centered -->
+  <polygon points="210,190 210,322 354,256" fill="#FFFFFF"></polygon>
+</svg>

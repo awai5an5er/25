@@ -1,0 +1,13 @@
+@import "tailwindcss";
+body{
+    background-color: #00152c;
+}
+
+@theme{
+    --color-light: #E6E1C9 ;
+    --color-dark: #00152c ;
+    /* --color-light: #CA9200 ; */
+}
+html, body {
+  overflow-x: hidden;
+}

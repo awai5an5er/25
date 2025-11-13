@@ -16,7 +16,7 @@ export default function App() {
     >
       {/* <div className="absolute inset-0 bg-black/40"></div> */}
       <h1
-        className="z-30 text-light text-center md:text-left font-extrabold py-8 justify-center md:text-transparent md:bg-clip-text md:select-none
+        className="z-30 text-light text-center md:text-left font-extrabold py-15 justify-center md:text-transparent md:bg-clip-text md:select-none
                    bg-cover bg-center leading-tight 
                    text-[2.5rem] sm:text-[5rem] md:text-[6rem] lg:text-[8rem] xl:text-[10rem] md:opacity-0 hover:opacity-100 transition-all duration-400"
         style={{

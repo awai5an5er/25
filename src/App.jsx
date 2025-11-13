@@ -14,8 +14,8 @@ import CounterSection from "./components/CounterSection";
 function App() {
   return (
     <div>
-      <Intro />
       <Navbar />
+      <Intro />
       <Hero />
       <SectionA />
       <Socials />

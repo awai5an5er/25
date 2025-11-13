@@ -12,10 +12,17 @@ import {
 import Logo from "../assets/logo-blue.png";
 
 export default function App() {
+  const navItems = [
+    { name: "HOME", href: "/" },
+    { name: "PLANS", href: "#1" },
+    { name: "TEAM", href: "#3" },
+    { name: "PROJECTS", href: "#2" },
+    { name: "TECH", href: "#4" },
+  ];
   return (
     <footer className="bg-light text-dark py-10 px-4 md:px-10">
       <div className="flex flex-col md:flex-row md:justify-between gap-10 items-center py-3 md:gap-20 flex-wrap">
-        <div className="flex flex-col items-center md:items-start gap-4 md:w-1/4">
+        <div className="flex flex-col items-center md:items-start gap-3 md:w-1/4">
           <div>
             <img className="w-32" src={Logo} alt="Logo" />
           </div>
@@ -61,20 +68,40 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className="w-full h-48 md:h-56 rounded-xl overflow-hidden shadow-md">
-        <iframe
-          title="Our Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8755.158848483072!2d74.37111735609506!3d31.489282870667058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905c3494884f3%3A0xc72efe41fc402ae7!2sE%2F78%20Street%203%2C%20Iqbal%20Park%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1762777736146!5m2!1sen!2s"
-          width="100%"
-          height="100%"
-          style={{ border: 2 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <div className="flex md:flex-row justify-between">
+        <div className="w-full md:w-[60%] h-48 md:h-56 rounded-xl overflow-hidden shadow-md">
+          <iframe
+            title="Our Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8755.158848483072!2d74.37111735609506!3d31.489282870667058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905c3494884f3%3A0xc72efe41fc402ae7!2sE%2F78%20Street%203%2C%20Iqbal%20Park%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1762777736146!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            style={{ border: 2 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div className="hidden md:flex md:justify-between md:items-start md:px-49">
+          <ul className="flex flex-col md:flex items-start gap-3">
+            <p className="font-bold text-[24px] md:text-[30px]">Quick Links</p>
+            {navItems.map((item, index) => (
+              <li
+                key={index}
+                className="text-dark text-lg text-[16px] md:text-[15px] text-center md:text-left relative cursor-pointer"
+              >
+                <a
+                  href={item.href}
+                  className="before:bg-dark before:absolute before:bottom-[-5px] before:left-0 before:w-0 before:h-1 hover:before:w-full before:transition-all hover:before:duration-500"
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-10 border-t border-dark pt-4 text-sm md:text-base">
-        <p>© Yoursitename 2024 | All Rights Reserved</p>
+        <p>© Yoursitename 2025 | All Rights Reserved</p>
         <div className="flex gap-4 md:gap-6">
           <p>Terms & Conditions</p>
           <p>Privacy Policy</p>

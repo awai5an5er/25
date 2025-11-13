@@ -14,11 +14,11 @@ export default function App() {
       className="bg-cover bg-center py-8 bg-no-repeat min-h-screen"
       style={{ backgroundImage: "url('/bg-pic5.png')" }}
     >
-      <div className="flex flex-wrap justify-center bg-light mx-auto rounded-2xl max-w-7xl gap-10 px-5">
+      <div className="flex flex-wrap justify-center  mx-auto  max-w-7xl gap-10 px-5">
         {items.map((pic, index) => (
           <div
             key={index}
-            className="py-10 w-full sm:w-[80%] md:w-[45%] lg:w-[30%]  overflow-hidden flex flex-col items-start"
+            className="py-10 w-full sm:w-[80%] md:w-[45%] lg:w-[30%] rounded-2xl bg-light overflow-hidden flex flex-col px-10"
           >
             <div
               onMouseEnter={() => setHover(index)}
